@@ -32,7 +32,7 @@ repositories {
             </intent-filter>
         </activity>
 ```
-务必设置自定义的host以及scheme,否则app间无法正常通讯 ！！！！！
+设置自定义的host以及scheme
 
 # 如何使用 ？
 #### 1.登录
