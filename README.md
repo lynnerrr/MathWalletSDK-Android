@@ -1,8 +1,6 @@
 # MathWalletSDK-Android
 基于SimpleWallet协议的Android SDK
-
-# 介绍
-基于 SimpleWallet协议的拓展协议 MathWallet 的SDK,支持公链 ETH,EOS,EOSFORCE 等
+支持公链 ETH,EOS,EOSFORCE 等
 
 # 如何安装 ？
 #### 1.复制 Sample 中 libs 下的 mathwalletlib-release.aar 到你的 app libs 下
