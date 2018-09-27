@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AppCompatButton payBtn = findViewById(R.id.pay_btn);
         loginBtn.setOnClickListener(this);
         payBtn.setOnClickListener(this);
-        LogUtil.isDebug = false;     //打开log日志
+        LogUtil.isDebug = true;     //打开log日志
     }
 
     @Override
