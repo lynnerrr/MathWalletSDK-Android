@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mathWalletPay.setPrecision(4);              //转账token精度
         mathWalletPay.setDappData("麦子钱包dapp测试");//memo or data
         mathWalletPay.setDesc("这是支付测试");        //交易的说明信息
-        mathWalletPay.setExpired(3600l);            //交易过期时间
+        mathWalletPay.setExpired(1538100593l);      //交易过期时间
         mathWalletPay.setCallback("customscheme://customhost?action=transfer");   //回调，scheme和host务必和RouterActivity在xml中设置的相同
         MathWalletManager.getInstance().requestPay(this, mathWalletPay, new MathWalletCallBack() {
             @Override
@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mathWalletLogin.setDappIcon("http://medishares.oss-cn-hongkong.aliyuncs.com/logo/mds-parity.png");//dapp图标Url
         mathWalletLogin.setUuID(UUID.randomUUID().toString());   //登录验证唯一标识
         mathWalletLogin.setLoginUrl("http://www.medishares.org");//service生成，用于接收此次登录验证的URL
-        mathWalletLogin.setExpired(3600l);                            //登录过期时间
-        mathWalletLogin.setLoginMemo("这是登录测试");               //备注信息，可选
+        mathWalletLogin.setExpired(1538100593l);                 //登录过期时间
+        mathWalletLogin.setLoginMemo("这是登录测试");              //备注信息，可选
         mathWalletLogin.setCallback("customscheme://customhost?action=login");                //回调，scheme和host务必和RouterActivity在xml中设置的相同
         MathWalletManager.getInstance().requestLogin(this, mathWalletLogin, new MathWalletCallBack() {
             @Override
